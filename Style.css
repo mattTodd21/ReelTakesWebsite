@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+#welcome, #movie-highlights, #tv-show-highlights {
+    margin-bottom: 30px;
+}
+
+#movie-highlights, #tv-show-highlights {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.highlight img {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.highlight-info h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Movie Review Image Styling */
+.review img {
+    max-width: 150px; /* Adjust this value as needed */
+    height: auto;
+    border-radius: 4px; /* Optional: Adds rounded corners */
+    margin-right: 20px;
+}
+
+/* Ensuring Responsiveness */
+@media screen and (max-width: 600px) {
+    .review img {
+        max-width: 100px; /* Smaller width on smaller screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px; /* Adjust as needed */
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+    }
+}
